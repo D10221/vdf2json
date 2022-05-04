@@ -1,0 +1,1 @@
+process.stdin.on("data", (data)=> process.stdout.write(JSON.stringify(require('vdf-parser').parse(data.toString("utf-8")))));
