@@ -29,8 +29,6 @@ jobs:
       - name: install dependencies 
         run: npm install 
       - name: build & bundle
-        run: npm run build
+        run: ./build
       - name: Test
-        run: |
-          npm link
-          ./test/test
+        run: ./test

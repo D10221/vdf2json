@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+npm link
+x=$(cat "test.vdf" | "vdf2json")
+expected='{"root":{"one":{"two":2}}}'
+test="$(basename $0)"
+if [ "$x" == "$expected" ]; then
+  echo "$test: It works!"
+else
+  echo "$test: Failed, Expected '$x' to be '$expected'";  
+  exit 1
+fi

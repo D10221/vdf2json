@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+rm -rf dist/
+./node_modules/.bin/esbuild --platform=node --bundle --outfile=dist/vdf2json.js vdf2json.js
+echo "#!/usr/bin/env node
+require('./vdf2json.js');
+" > dist/vdf2json
+chmod +x dist/vdf2json
