@@ -13,6 +13,6 @@
   },
   "dependencies": {},
   "scripts": {
-    "build": "esbuild --platform=node --bundle --outfile=dist/vdf2json.js main.js"
+    "build": "esbuild --platform=node --bundle --outfile=dist/vdf2json.js vdf2json.js"
   }
 }
