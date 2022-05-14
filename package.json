@@ -1,9 +1,10 @@
 {
   "name": "vdf2json",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "vdf2json.js",
   "bin": {
-    "vdf2json": "dist/vdf2json"
+    "vdf2json": "dist/vdf2json",
+    "vdfbin2json": "dist/vdfbin2json"
   },
   "license": "MIT",
   "devDependencies": {
@@ -34,5 +35,8 @@
   "bugs": {
     "url": "https://github.com/D10221/vdf2json/issues"
   },
-  "homepage": "https://github.com/D10221/vdf2json#readme"
+  "homepage": "https://github.com/D10221/vdf2json#readme",
+  "dependencies": {
+    "steam-binary-vdf": "^0.1.0"
+  }
 }

@@ -1,7 +1,15 @@
 #!/usr/bin/env bash
 rm -rf dist/
 ./node_modules/.bin/esbuild --platform=node --bundle --outfile=dist/vdf2json.js vdf2json.js
+
 echo "#!/usr/bin/env node
 require('./vdf2json.js');
 " > dist/vdf2json
 chmod +x dist/vdf2json
+
+./node_modules/.bin/esbuild --platform=node --bundle --outfile=dist/vdfbin2json.js vdfbin2json.mjs
+
+echo "#!/usr/bin/env node
+require('./vdfbin2json.js');
+" > dist/vdfbin2json
+chmod +x dist/vdfbin2json
